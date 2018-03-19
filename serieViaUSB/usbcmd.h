@@ -48,6 +48,21 @@
 #define USBASP_MODE_SETBAUD57600    0x18
 #define USBASP_MODE_SETBAUD115200   0x19
 
+#define USBASP_MODE_SETBAUD_SMALLEST USBASP_MODE_SETBAUD300
+#define BAUD_RATES_AVAILABLE 10
+const int BAUD_RATES[BAUD_RATES_AVAILABLE] = {
+        300,
+        600,
+        1200,
+        2400,
+        4800,
+        9600,
+        19200,
+        38400,
+        57600,
+        115200
+};
+
 #define USBASP_MODE_UART5BIT		0x05
 #define USBASP_MODE_UART6BIT		0x06
 #define USBASP_MODE_UART7BIT		0x07
