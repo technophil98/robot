@@ -256,7 +256,7 @@ int analyseLigneDeCommande (int argc, char *argv[] ) {
                 afficherAide();
             }
         }
-        else if ( strcmp (argv[i], "-b") == 0 ||
+        else if ( strcmp (argv[i], "-B") == 0 ||
                   strcmp (argv[i], "--baud-rate") == 0 ) {
             i++;
             if ( i < argc ) {
@@ -281,6 +281,7 @@ int analyseLigneDeCommande (int argc, char *argv[] ) {
         else if ( strcmp (argv[i], "-e") == 0 ||
                   strcmp (argv[i], "--ecriture") == 0 ) {
             ecriture = true;
+            modeAffichage = DEC;
         }
         else if ( strcmp (argv[i], "-h") == 0 ||
                   strcmp (argv[i], "--hexadecimal") == 0 ) {
